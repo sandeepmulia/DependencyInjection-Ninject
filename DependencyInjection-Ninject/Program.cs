@@ -14,6 +14,7 @@ namespace DependencyInjection_Ninject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Demo of usage of Ninject for Dependency injection");
             StandardKernel _kernel = new StandardKernel();
             _kernel.Load(Assembly.GetExecutingAssembly());
             IInterface intfc = _kernel.Get<IInterface>();
